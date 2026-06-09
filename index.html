@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Somone Weather - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>Somone Weather 🌤️</h1>
+        <div class="subtitle">Application Météo · Somone Code Environment</div>
+    </header>
+
+    <main class="weather-viewport">
+        <div class="weather-container">
+            <div class="search-group">
+                <input type="text" id="city-input" placeholder="Ex: Dakar, Paris..." autocomplete="off">
+                <button id="btn-search">Rechercher</button>
+            </div>
+
+            <div id="weather-result">
+                <div id="main-weather-info">
+                    <h2 id="result-city">Recherchez une ville</h2>
+                    <img id="weather-icon" src="" alt="Icône météo">
+                    <div id="result-temp" class="temp-display">--°C</div>
+                    <p id="result-desc">Entrez une ville pour voir le temps.</p>
+                </div>
+
+                <div class="separator"></div>
+
+                <div id="weather-details" class="details-grid">
+                    <div class="detail-item">
+                        <span class="detail-label">💧 Humidité</span>
+                        <span id="detail-humidity" class="detail-value">--%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">💨 Vent</span>
+                        <span id="detail-wind" class="detail-value">-- km/h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 <span class="brand-highlight">Propulsé par Somone Code</span> · Tous droits réservés.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
