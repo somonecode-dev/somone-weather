@@ -39,15 +39,31 @@ h1 { color: #22d3ee; font-size: 28px; margin-bottom: 5px; }
     justify-content: center;
 }
 
-.search-group { display: flex; gap: 10px; margin-bottom: 20px; }
+.search-group { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+    width: 100%;
+    align-items: center;
+}
+
 #city-input { 
-    flex: 1; padding: 12px; border-radius: 12px; border: 2px solid transparent; 
-    background: #0f172a; color: white; outline: none; transition: all 0.3s ease; 
+    flex: 1; 
+    min-width: 0;
+    padding: 12px; 
+    border-radius: 12px; 
+    border: 2px solid transparent; 
+    background: #0f172a; 
+    color: white; 
+    outline: none; 
+    transition: all 0.3s ease; 
 }
 #city-input:hover, #city-input:focus { border-color: #22d3ee; }
 
 #btn-search {
-    padding: 10px 20px; 
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 12px 20px;
     border-radius: 12px; 
     background: #22d3ee;
     border: none; 
